@@ -13,14 +13,14 @@ import java.util.ResourceBundle;
  */
 public class ModelFactory {
     
-    private final static String modelTypeText = "TEXT";
-    private final static String modelTypeBd = "BD";
+    private static final String modelTypeText = "TEXT";
+    private static final String modelTypeBd = "BD";
     
     public static Model getModel() {
         
         Model model = null;
         
-        ResourceBundle configFile = ResourceBundle.getBundle("C:\\Users\\2dam.TARTANGALH\\Documents\\HelloWorldMVC\\src\\helloworldmvc\\properties\\config");
+        ResourceBundle configFile = ResourceBundle.getBundle("helloworldmvc.properties.config");
         String modelType = configFile.getString("MODEL_TYPE");
         
         if (modelType.equalsIgnoreCase(modelTypeText)) {

@@ -16,7 +16,7 @@ public class ModelImplementation implements Model{
     @Override
     public String getGreeting() {
         
-        ResourceBundle greetingFile = ResourceBundle.getBundle("C:\\Users\\2dam.TARTANGALH\\Documents\\HelloWorldMVC\\src\\helloworldmvc\\properties\\greeting");
+        ResourceBundle greetingFile = ResourceBundle.getBundle("helloworldmvc.properties.greeting");
         return greetingFile.getString("MESSAGE");
         
     }

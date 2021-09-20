@@ -13,7 +13,7 @@ public class ViewTextImplementation implements View{
 
     @Override
     public void showGreeting(String message) {
-        System.out.print(message);
+        System.out.println(message);
     }
     
     

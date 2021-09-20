@@ -13,15 +13,15 @@ import java.util.ResourceBundle;
  */
 public class ViewFactory {
     
-    private final static String viewTypeText = "TEXT";
-    private final static String viewTypeSwing = "SWING";
-    private final static String viewTypeFx = "FX";
+    private static final String viewTypeText = "TEXT";
+    private static final String viewTypeSwing = "SWING";
+    private static final String viewTypeFx = "FX";
     
     public static View getView() {
         
         View view = null;
         
-        ResourceBundle configFile = ResourceBundle.getBundle("C:\\Users\\2dam.TARTANGALH\\Documents\\HelloWorldMVC\\src\\helloworldmvc\\properties\\config");
+        ResourceBundle configFile = ResourceBundle.getBundle("helloworldmvc.properties.config");
         String viewType = configFile.getString("VIEW_TYPE");
         
         if (viewType.equalsIgnoreCase(viewTypeText)) {
