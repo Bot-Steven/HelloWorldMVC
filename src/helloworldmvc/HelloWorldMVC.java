@@ -5,9 +5,13 @@
  */
 package helloworldmvc;
 
+import helloworldmvc.controller.Controller;
+import static helloworldmvc.model.ModelFactory.getModel;
+import static helloworldmvc.view.ViewFactory.getView;
+
 /**
  *
- * @author 2dam
+ * @author steven,irkus
  */
 public class HelloWorldMVC {
 
@@ -15,7 +19,9 @@ public class HelloWorldMVC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Controller controller = new Controller();
+        controller.run(getView(), getModel());
     }
     
 }
