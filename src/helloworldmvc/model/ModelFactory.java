@@ -27,6 +27,10 @@ public class ModelFactory {
             model = new ModelImplementation();
         }
         
+        if (modelType.endsWith(modelTypeBd)) {
+            model = new ModelBDImplementation();
+        }
+        
         return model;
         
     }
