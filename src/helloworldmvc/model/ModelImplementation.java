@@ -7,7 +7,7 @@ package helloworldmvc.model;
 
 import java.util.ResourceBundle;
 
-/**test
+/**
  *
  * @author steven,irkus
  */
