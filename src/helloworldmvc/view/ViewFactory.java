@@ -21,13 +21,18 @@ public class ViewFactory {
         
         View view = null;
         
-        ResourceBundle configFile = ResourceBundle.getBundle("helloworldmvc.properties.config");
-        String viewType = configFile.getString("VIEW_TYPE");
+        String viewType =  ResourceBundle.getBundle("helloworldmvc.properties."
+                + "config").getString("VIEW_TYPE");
         
         if (viewType.equalsIgnoreCase(viewTypeText)) {
-            view = new ViewTextImplementation();
+             view = new ViewTextImplementation();
         }
-        
+        if (viewType.equalsIgnoreCase(viewTypeSwing)) {
+            view = new ViewSwingImplementation();
+        }
+        if (viewType.equalsIgnoreCase(viewTypeFx)) {
+            view = new ViewFXImplementation();
+        }
         return view;
         
     }
