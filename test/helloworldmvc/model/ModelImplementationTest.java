@@ -10,15 +10,17 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 2dam
+ * @author steven,irkus
  */
 public class ModelImplementationTest {
     
     @Test
     public void testGetGreeting() {
+        
         Model model = new ModelImplementation();
-        String resultado="HOLA MUNDO";
+        String resultado = "HOLA MUNDO";
         assertEquals(resultado,model.getGreeting());
+        
     }
     
 }

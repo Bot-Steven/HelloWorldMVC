@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 2dam
+ * @author steven,irkus
  */
 public class ModelBDImplementationTest {
     
@@ -18,9 +18,9 @@ public class ModelBDImplementationTest {
 
     @Test
     public void testgetGreeting() {
-        Model bdim=new ModelBDImplementation();
-        String resultado="Hola mundo desde la BD";
-        assertEquals("The greetings are diferent",resultado,bdim.getGreeting());
+        Model bdim = new ModelBDImplementation();
+        String resultado = "Hola mundo desde la BD";
+        assertEquals(resultado,bdim.getGreeting());
     }
     
 }

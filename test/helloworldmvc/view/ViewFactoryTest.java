@@ -18,7 +18,8 @@ public class ViewFactoryTest {
     @Test
     public void testGetView() {
 
-        assertNotNull("Nulo",ViewFactory.getView());
+        ViewFactory vf = new ViewFactory();
+        assertNotNull(vf);
         
     }
     
