@@ -17,12 +17,12 @@ public class ViewFXImplementation extends Application implements View{
     
     @Override
     public void start(Stage primaryStage) {
-        
+        primaryStage.show();
     }
 
     @Override
     public void showGreeting(String message) {
-        
+        launch();
     }
 
     
