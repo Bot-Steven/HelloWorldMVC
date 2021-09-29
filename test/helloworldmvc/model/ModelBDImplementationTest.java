@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,8 +6,12 @@
  */
 package helloworldmvc.model;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+
+
+
+
+import org.junit.Test;
 
 /**
  *
@@ -20,7 +25,8 @@ public class ModelBDImplementationTest {
     public void testgetGreeting() {
         Model bdim = new ModelBDImplementation();
         String resultado = "Hola mundo desde la BD";
-        assertEquals(resultado,bdim.getGreeting());
+        assertEquals("No es BD",resultado,bdim.getGreeting());
     }
     
 }
+

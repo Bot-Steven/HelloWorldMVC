@@ -1,3 +1,4 @@
+
 package helloworldmvc.model;
 
 /*
@@ -26,13 +27,14 @@ public class ModelFactoryTest {
     @Test
     public void testGetModelImplementation() {
         Model mi = new ModelImplementation();
-        assertTrue(mi instanceof ModelImplementation);        
+        assertTrue("No es archivo",mi instanceof ModelImplementation);        
     }
     
     @Test
     public void testGetModelBDImplementation() {
         Model mibd = new ModelBDImplementation();
-        assertTrue(mibd instanceof ModelBDImplementation);
+        assertTrue("No es bd",mibd instanceof ModelBDImplementation);
     }
     
 }
+

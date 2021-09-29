@@ -5,6 +5,8 @@
  */
 package helloworldmvc.view;
 
+import helloworldmvc.model.Model;
+import helloworldmvc.model.ModelBDImplementation;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -21,6 +23,21 @@ public class ViewFactoryTest {
         ViewFactory vf = new ViewFactory();
         assertNotNull(vf);
         
+    }
+    @Test
+    public void testGetViewTextImplementation() {
+        Model mibd = new ModelBDImplementation();
+        assertTrue("No es Texto",mibd instanceof ModelBDImplementation);
+    }
+    @Test
+    public void testGetViewFxImplementation() {
+        Model mibd = new ModelBDImplementation();
+        assertTrue("No es JavaFx",mibd instanceof ModelBDImplementation);
+    }
+    @Test
+    public void testGetViewSwingImplementation() {
+        Model mibd = new ModelBDImplementation();
+        assertTrue("No es Swing",mibd instanceof ModelBDImplementation);
     }
     
 }
