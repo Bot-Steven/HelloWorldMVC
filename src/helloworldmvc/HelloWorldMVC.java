@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package helloworldmvc;
 
 import helloworldmvc.controller.Controller;
@@ -10,13 +5,14 @@ import static helloworldmvc.model.ModelFactory.getModel;
 import static helloworldmvc.view.ViewFactory.getView;
 
 /**
- *
+ * Esta clase se usa como punto de entrada de la aplicacion.
  * @author steven,irkus
  */
 public class HelloWorldMVC {
 
     /**
-     * @param args the command line arguments
+     * 
+     * @param args 
      */
     public static void main(String[] args) {
         

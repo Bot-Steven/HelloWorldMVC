@@ -1,16 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package helloworldmvc.view;
 
 /**
- *
+ * Esto es una interfaz para obtener un tipo de interfaz de usuario
  * @author steven,irkus
  */
 public interface View {
     
+    /**
+     * Metodo para mostrar mediante una vista el saludo 
+     * @param message recibe un mensaje o saludo para luego mostrarla en la 
+     * vista
+     */
     public void showGreeting(String message);
     
 }

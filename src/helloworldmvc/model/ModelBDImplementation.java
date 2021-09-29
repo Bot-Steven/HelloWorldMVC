@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package helloworldmvc.model;
 
 import java.net.ConnectException;
@@ -14,7 +9,7 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 /**
- *
+ * Esta clase pretende obtener un mensaje de una base de datos
  * @author steven,irkus
  */
 public class ModelBDImplementation implements Model {
@@ -26,7 +21,10 @@ public class ModelBDImplementation implements Model {
     private String url, user, pass;
 
     private final String mostrarSaludo = "SELECT * FROM saludos";
-
+    
+    /**
+     * Metodo para abrir la conexion con la base de datos
+     */
     public void openConnection() {
 
         bdFile = ResourceBundle.getBundle("helloworldmvc.properties.bdconfig");
@@ -41,7 +39,12 @@ public class ModelBDImplementation implements Model {
         }
 
     }
-
+    
+    /**
+     * Metodo para cerrar la conexion con la base de datos
+     * @throws ConnectException mensaje de error cuando falla la desconexion 
+     * con la base de datos
+     */
     public void closeConnection() throws ConnectException {
 
         if (stmt != null || con != null) {
@@ -54,7 +57,12 @@ public class ModelBDImplementation implements Model {
         }
 
     }
-
+    
+    /**
+     * Metodo para obtener el mensaje o saludo de la base de datos mediante
+     * una sentencia sql
+     * @return devuelve el mensaje de la tabla "Saludo" de la base de datos
+     */
     @Override
     public String getGreeting() {
 

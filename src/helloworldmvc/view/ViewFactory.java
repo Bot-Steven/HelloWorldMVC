@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package helloworldmvc.view;
 
 import java.util.ResourceBundle;
 
 /**
- *
+ * Esta clase pretende manejar la creacion de una Vista, accediendo a un 
+ * archivo de configuracion para su instanciacion.
  * @author steven,irkus
  */
 public class ViewFactory {
@@ -17,6 +13,11 @@ public class ViewFactory {
     private static final String viewTypeSwing = "SWING";
     private static final String viewTypeFx = "FX";
     
+    /**
+     * Metodo para instanciar una Vista segun el archivo de configuracion
+     * @return devuelve una Vista que se instancia segun la configuracion que
+     * se haya hecho
+     */
     public static View getView() {
         
         View view = null;
